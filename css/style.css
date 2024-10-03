@@ -1,41 +1,41 @@
-/* Basic resets and mobile-first styling */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: 'Arial', sans-serif;
-  line-height: 1.6;
-  color: #333;
-  background-color: #fff;
-  padding: 1rem;
+  position: relative;
+  height: 810px;
+  width: 375px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  background-image: url("background1.png");
 }
 
-/* Header Section */
+.background-img {
+  position: absolute;
+  top: 80px;
+  right: 8px;
+  z-index: -1;
+}
+
 .header {
   background-color: #fff;
-  padding: 1rem;
+  height: 48px;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .logo {
-  color: #6372ff;
-  font-size: 1.5rem;
-  font-weight: bold;
+  color: #6070ff;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 24px;
 }
 
 .menu-icon {
   display: flex;
   flex-direction: column;
-  gap: 0.3rem;
-  cursor: pointer;
+  gap: 5px;
+  margin: 24px;
 }
 
 .menu-icon span {
@@ -45,78 +45,39 @@ body {
   display: block;
 }
 
-/* Headline Section */
-.headline {
-  text-align: left;
-  padding: 2rem 1rem;
-  font-family: 'Arial', sans-serif;
-}
-
 .headline-title {
-  font-size: 2.5rem;
-  color: #333;
-  font-weight: bold;
-}
-
-.headline-subtitle {
-  font-size: 2rem;
-  color: #333;
-  font-weight: bold;
-  margin-bottom: 1rem;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: left;
+  color: #172b4d;
+  margin: 114px 24px 12px 24px;
 }
 
 .headline-text {
-  font-size: 1rem;
-  color: #7d89a1;
-  margin-bottom: 1.5rem;
+  font-size: 16px;
+  font-weight: 400;
+  color: #344563;
+  margin: 12px 24px 12px 24px;
 }
 
 .headline-link {
-  display: inline-block;
-  color: #6372ff;
-  font-size: 1rem;
+  font-size: 16px;
+  font-weight: 500;
+  color: #7f8cff;
   text-decoration: none;
-  font-weight: bold;
-  margin-bottom: 1rem;
+  margin: 24px;
 }
 
 .social-icons {
   display: flex;
-  gap: 1rem;
-  margin-top: 1.5rem;
+  list-style: none;
+  margin-top: 12px;
+  margin-left: 16px;
 }
 
 .social-icons a img {
-  width: 24px;
-  height: 24px;
-}
-
-/* Responsive styling for larger screens */
-@media (min-width: 768px) {
-  .navbar {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  .headline {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .headline-title {
-    font-size: 3rem;
-  }
-
-  .headline-subtitle {
-    font-size: 2.5rem;
-  }
-
-  .headline-text {
-    font-size: 1.2rem;
-  }
-
-  .social-icons {
-    justify-content: center;
-  }
+  width: 20px;
+  height: auto;
+  margin-left: 8px;
+  margin-right: 8px;
 }
