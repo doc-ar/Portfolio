@@ -347,6 +347,23 @@ body {
 }
 
 .contact-form .contact-submit:hover {
-  height: 58px;
-  width: 152px;
+  background-color: #f0f0f0;
 }
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 34px;
+  background-color: #6070ff;
+}
+
+footer hr {
+  margin: 0px;
+  border-radius: 20px;
+  border-width: 0px;
+  background-color: black;
+  width: 134px;
+  height: 5px;
+}
+

@@ -204,12 +204,15 @@
       with it!
     </p>
     <form class="contact-form">
-      <input required type="name" placeholder="Name" class="contact-name" />
+      <input required type="name" placeholder="Name" class="contact-name" maxlength="30" />
       <input required type="email" placeholder="Email" class="contact-email" />
-      <textarea class="contact-message" placeholder="Write your message here"></textarea>
+      <textarea required class="contact-message" placeholder="Write your message here" maxlength="500"></textarea>
       <input type="button" value="Get in touch" class="contact-submit" />
     </form>
   </section>
+  <footer>
+    <hr>
+  </footer>
 </body>
 
 </html>
