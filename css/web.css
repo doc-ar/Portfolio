@@ -20,7 +20,7 @@
   .header {
     background-color: #fff;
     height: 20px;
-    padding: 16px 143px 16px 143px;
+    padding: 16px 143px;
   }
 
   .navbar {
@@ -37,17 +37,24 @@
   }
 
   .menu-icon {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+    display: none;
   }
 
-  .menu-icon span {
-    width: 25px;
-    height: 3px;
-    border-radius: 12px;
-    background-color: #6372ff;
-    display: block;
+  .menu-items {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+  }
+
+  .menu-items li {
+    display: inline;
+  }
+
+  .menu-items a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
   }
 
   .headline {
