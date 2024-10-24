@@ -42,8 +42,19 @@
 
   .menu-items {
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     gap: 20px;
-    list-style-type: none;
+    background-color: none;
+    position: static;
+    border: none;
+    border-radius: 0;
+    list-style: none;
+    z-index: 10;
+  }
+
+  .menu-items li:nth-child(1) {
+    display: none;
   }
 
   .menu-items li {
