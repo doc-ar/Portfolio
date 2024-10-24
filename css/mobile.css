@@ -32,19 +32,51 @@
   .menu-icon {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    cursor: pointer;
   }
 
   .menu-icon span {
     width: 25px;
     height: 3px;
-    border-radius: 12px;
     background-color: #6372ff;
-    display: block;
+    margin: 4px 0;
   }
 
   .menu-items {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 100px;
+    background-color: #fff;
+    border: 1px solid #dfe1e6;
+    border-radius: 8px;
     display: none;
+    flex-direction: column;
+    padding: 10px;
+    list-style: none;
+    z-index: 10;
+  }
+
+  .menu-items.active {
+    display: flex;
+    justify-content: center;
+  }
+
+  .menu-items li {
+    margin: 10px 0;
+  }
+
+  .menu-items a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .close-icon {
+    cursor: pointer;
+    align-self: flex-end; /* Align to the right */
+    color: #6372ff; /* Color for the close icon */
   }
 
   .headline {
