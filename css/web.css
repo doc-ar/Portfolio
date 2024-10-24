@@ -53,9 +53,7 @@
     z-index: 10;
   }
 
-  .menu-items li:nth-child(1) {
-    display: none;
-  }
+
 
   .menu-items li {
     display: inline;
@@ -410,4 +408,8 @@
     width: 134px;
     height: 5px;
   }
+}
+
+.menu-items li:nth-child(1) {
+  display: none;
 }
