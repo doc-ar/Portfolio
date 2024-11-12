@@ -1,4 +1,4 @@
-@media (min-width: 0) {
+@media (max-width: 375px) {
   body {
     width: 375px;
     font-family: "Poppins", sans-serif;
@@ -42,41 +42,59 @@
     margin: 4px 0;
   }
 
-  .menu-items {
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    width: 100px;
-    background-color: #fff;
-    border: 1px solid #dfe1e6;
-    border-radius: 8px;
+  #menu {
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 28px 28px 0 28px;
+    margin: 0;
+    background-color: rgba(99, 114, 255, 0.8);
+    backdrop-filter: blur(6px);
     display: none;
     flex-direction: column;
-    padding: 10px;
-    list-style: none;
-    z-index: 10;
+    justify-content: flex-start;
+    align-items: flex-start;
+    z-index: 1000;
   }
 
-  .menu-items.active {
+  .close-icon {
+    height: 20px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+  }
+
+  .close-icon > p {
+    cursor: pointer;
+  }
+
+  .menu-items {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
   }
 
   .menu-items li {
-    margin: 10px 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
   }
 
   .menu-items a {
     text-decoration: none;
-    color: black;
-    font-size: 15px;
-    font-weight: 500;
-  }
-
-  .close-icon {
-    cursor: pointer;
-    align-self: flex-end; /* Align to the right */
-    color: #6372ff; /* Color for the close icon */
+    color: white;
+    font-size: 32px;
+    font-weight: 600;
   }
 
   .headline {

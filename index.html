@@ -18,20 +18,26 @@
     <header class="header">
       <nav class="navbar">
         <h1 class="logo">My Logo</h1>
-        <div class="menu-icon" onclick="toggleMenu()">
+        <div class="menu-icon" id="hamburger-icon" onclick="toggleMenu()">
           <span></span>
           <span></span>
           <span></span>
         </div>
 
-        <ul class="menu-items" id="menuItems">
-          <li class="close-icon" onclick="toggleMenu()">×</li>
-          <li onClick="toggleMenu()"><a href="">Portfolio</a></li>
-          <li><a href="#about" onclick="scrollToSection(event)">About</a></li>
-          <li>
-            <a href="#contact" onclick="scrollToSection(event)">Contact</a>
-          </li>
-        </ul>
+        <div id="menu">
+          <div class="close-icon">
+            <p onclick="toggleMenu()">×</p>
+          </div>
+          <ul class="menu-items" id="menuItems">
+            <li>
+              <a href="#portfolio" onclick="scrollToSection(event)">Portfolio</a>
+            </li>
+            <li><a href="#about" onclick="scrollToSection(event)">About</a></li>
+            <li>
+              <a href="#contact" onclick="scrollToSection(event)">Contact</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
 

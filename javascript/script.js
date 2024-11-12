@@ -1,8 +1,9 @@
 // Toggle Function
 function toggleMenu() {
-  const menuItems = document.getElementById("menuItems");
-  menuItems.style.display =
-    menuItems.style.display === "flex" ? "none" : "flex";
+  const menuIcon = document.getElementById("hamburger-icon");
+  const menu = document.getElementById("menu");
+  menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+  menuIcon.style.display = menuIcon.style.display === "none" ? "flex" : "none";
 }
 
 // Scroll Function
@@ -13,7 +14,7 @@ function scrollToSection(event) {
 
   if (targetElement) {
     // Scroll to the target element
-    targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
     toggleMenu(); // Close the menu after selecting an item
+    targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 }

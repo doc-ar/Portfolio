@@ -1,4 +1,4 @@
-@media (min-width: 1050px) {
+@media (min-width: 376px) {
   * {
     margin: 0;
     padding: 0;
@@ -19,7 +19,6 @@
 
   .header {
     background-color: #fff;
-    height: 20px;
     padding: 16px 143px;
   }
 
@@ -40,6 +39,10 @@
     display: none;
   }
 
+  .close-icon {
+    display: none;
+  }
+
   .menu-items {
     display: flex;
     flex-direction: row;
@@ -52,8 +55,6 @@
     list-style: none;
     z-index: 10;
   }
-
-
 
   .menu-items li {
     display: inline;
@@ -408,8 +409,4 @@
     width: 134px;
     height: 5px;
   }
-}
-
-.menu-items li:nth-child(1) {
-  display: none;
 }
