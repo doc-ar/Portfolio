@@ -1,4 +1,4 @@
-@media (min-width: 1050px) {
+@media (min-width: 376px) {
   * {
     margin: 0;
     padding: 0;
@@ -19,8 +19,7 @@
 
   .header {
     background-color: #fff;
-    height: 20px;
-    padding: 16px 143px 16px 143px;
+    padding: 16px 143px;
   }
 
   .navbar {
@@ -37,17 +36,35 @@
   }
 
   .menu-icon {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+    display: none;
   }
 
-  .menu-icon span {
-    width: 25px;
-    height: 3px;
-    border-radius: 12px;
-    background-color: #6372ff;
-    display: block;
+  .close-icon {
+    display: none;
+  }
+
+  .menu-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+    background-color: none;
+    position: static;
+    border: none;
+    border-radius: 0;
+    list-style: none;
+    z-index: 10;
+  }
+
+  .menu-items li {
+    display: inline;
+  }
+
+  .menu-items a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
   }
 
   .headline {

@@ -18,10 +18,25 @@
     <header class="header">
       <nav class="navbar">
         <h1 class="logo">My Logo</h1>
-        <div class="menu-icon">
+        <div class="menu-icon" id="hamburger-icon" onclick="toggleMenu()">
           <span></span>
           <span></span>
           <span></span>
+        </div>
+
+        <div id="menu">
+          <div class="close-icon">
+            <p onclick="toggleMenu()">×</p>
+          </div>
+          <ul class="menu-items" id="menuItems">
+            <li>
+              <a href="#portfolio" onclick="scrollToSection(event)">Portfolio</a>
+            </li>
+            <li><a href="#about" onclick="scrollToSection(event)">About</a></li>
+            <li>
+              <a href="#contact" onclick="scrollToSection(event)">Contact</a>
+            </li>
+          </ul>
         </div>
       </nav>
     </header>
@@ -45,7 +60,7 @@
       </div>
     </section>
 
-    <section class="card-container">
+    <section class="card-container" id="portfolio">
       <div class="card">
         <img
           src="src/cards/card1.png"
@@ -172,7 +187,7 @@
       </div>
     </section>
 
-    <section class="about-me">
+    <section class="about-me" id="about">
       <section class="info-and-contact">
         <h2 class="headline-title">About Myself</h2>
         <p class="headline-text">
@@ -237,7 +252,7 @@
         </div>
       </section>
     </section>
-    <section class="contact-me-section">
+    <section class="contact-me-section" id="contact">
       <h1>Contact Me</h1>
       <p>
         If you have an application you are interested in developing, a feature
@@ -270,5 +285,7 @@
     <footer>
       <hr />
     </footer>
+
+    <script src="javascript/script.js"></script>
   </body>
 </html>
